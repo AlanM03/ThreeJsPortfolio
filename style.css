@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+body, html{
+  width:100%;
+  height: 100%;
+  display:block;
+  scroll-behavior: smooth;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;;
+  
+  
+  
+}
+
+#cool{
+  
+  position:relative;
+  width:100%;
+  /* color:rgb(101, 161, 202); */
+  color:white;
+  /* left:30vw;
+  top:12vw; */
+
+  font-family: 'Chakra Petch', sans-serif;
+  /* font-family: 'Raleway',sans-serif; */
+
+  /* font-size: 60px; */
+  font-size: 4vw;
+  
+  /* -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.1px; */
+  
+
+  /* letter-spacing: 3px; */
+
+   /* background-color:red;  */
+
+   top:8vw;
+   
+}
+
+
+main{
+  top:0;
+  position:relative;
+  width:80%;
+  height:100%;
+  margin:auto;
+
+  /* background-color:blue; */
+
+  text-align:center;
+  
+  
+}
+
+#name{
+  opacity:100;
+  transition: 1s;
+  z-index: -1;
+}
+
+#footer{
+  
+  display:flex;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  left:0;
+}
+
+#footer > *:nth-child(1){
+  flex: 33%;
+padding:5px;
+
+}
+
+#footer > *:nth-child(2){
+  flex: 33%;
+padding:5px;
+
+}
+
+
+#footer > *:nth-child(3){
+  flex: 33%;
+padding:5px;
+
+}
+
+#home:hover{
+  opacity:70%;
+  cursor:pointer;
+}
+
+#projects:hover{
+  opacity:70%;
+  cursor:pointer;
+}
+
+#about:hover{
+  opacity:70%;
+  cursor:pointer;
+}
+
+p{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.5vw;
+  top:15%;
+  
+}
+
+#aboutPara{
+  width:60%;
+  height:60%;
+  top:0;
+  left:0;
+  background-color: whitesmoke;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-style: outset;
+  border-radius: 10px;
+  border-color:rgb(14, 62, 78);
+  opacity: 1;
+}
+
+#projPics{
+  width:50%;
+  height:50%;
+  opacity:0;
+  border-style: outset;
+  border-radius: 10px;
+  border-color:rgb(14, 62, 78);
+}
+
+#arrows{
+  width:100%;
+  
+  
+  opacity:0;
+  font-size: 4.5vw;
+  display:none;
+  color:rgb(15, 37, 86);
+  position: relative;
+  margin:auto;
+  -webkit-text-stroke: 2px white;
+  transition:1s;
+
+  
+  
+}
+
+#left{
+  flex: 33%;
+  opacity:0;
+  
+
+}
+
+#right{
+  flex: 33%;
+  opacity:0;
+
+}
+
+#middle{
+  flex: 33%;
+  opacity:0;
+  font-family: 'Press Start 2P', cursive;
+
+  color:white;
+
+  transition:1s;
+}
+
+#middle:hover{
+  opacity: 70%;
+}
+@media only screen and (max-width: 600px) {
+  #arrows, #projPics {
+    font-size: 4vw;
+    width:90%;
+    height:60%;
+    
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  #arrows, #projPics {
+    font-size: 3vw;
+    width:80%;
+    height:60%;
+    
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #arrows, #projPics {
+    font-size: 4vw;
+    width:60%;
+    height:50%;
+    
+  }
+}
+
+
+
+h4:hover{
+  opacity:60%;
+  cursor:pointer;
+}
+
+h3{
+  position: relative;
+  left:37.5%;
+  font-size: 1.8vw;
+  font-family: 'Press Start 2P', cursive;
+  
+}
+
+h5{
+  position:relative;
+  font-size: 1.3vw;
+  top: 42%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#h52{
+  
+  top: 64%;
+  
+}
+
+
+#p2{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.1vw;
+  top:52%;
+  width:25ch;
+
+}
+
+#p3{
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.4vw;
+  top:74%;
+  width:28ch;
+  
+
+}
+
+#knightImg{
+  
+  bottom:0;
+  right:5%;
+  width:40%;
+  height:60%;
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 2.6vw;
+    
+  }
+
+  #p2 {
+    font-size: 2.3vw;
+    
+  }
+
+  #p3 {
+    font-size: 2.3vw;
+    
+  }
+
+  h3{
+    font-size: 4vw;
+    left:25%;
+  }
+
+  h5{
+    font-size: 2vw;
+  }
+
+  #knightImg{
+    right:0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  p {
+    font-size: 2.2vw;
+    
+  }
+
+  #p2 {
+    font-size: 2.2vw;
+    
+  }
+
+  #p3 {
+    font-size: 2.2vw;
+    
+  }
+
+  h3{
+    font-size: 3.2vw;
+    left:28%;
+  }
+
+  h5{
+    font-size: 1.8vw;
+  }
+
+  #knightImg{
+    right:0;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  p {
+    font-size: 1.5vw;
+    
+  }
+
+  #p2 {
+    font-size: 1.1vw;
+    
+  }
+
+  #p3 {
+    font-size: 1.5vw;
+    
+  }
+
+  h3{
+    font-size: 1.8vw;
+  }
+
+  h5{
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  p {
+    font-size: 1.5vw;
+    
+  }
+
+  #p2 {
+    font-size: 1.1vw;
+    
+  }
+
+  #p3 {
+    font-size: 1.4vw;
+    
+  }
+
+  h3{
+    font-size: 2.4vw;
+    left:33%;
+  }
+
+  h5{
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (max-height: 600px) and (min-width: 1400px){
+  #name, #projPics, #arrows, #aboutPara{
+    display:none;
+  }
+}
